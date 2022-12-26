@@ -5,6 +5,7 @@ npm init
 
 code boiler-plate
 .gitignore 생성
+ ㄴ https://www.toptal.com/developers/gitignore
 git init
 git add .
 git commit '#1 소개'
@@ -14,5 +15,53 @@ git push origin master
 #2 NODE JS 와 EXPRESS JS 다운로드 하기
 npm install express --save
 index.js 생성
-https://expressjs.com/en/starter/hello-world.html
+ ㄴ https://expressjs.com/en/starter/hello-world.html
 npm run start
+
+#3 몽고 DB 연결
+https://www.mongodb.com/kr
+
+mongodb+srv://mzncvmc:<password>@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority
+
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://mzncvmc:<password>@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+
+Mongoose 설치
+npm install mongoose --save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
