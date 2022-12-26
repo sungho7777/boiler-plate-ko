@@ -12,17 +12,18 @@ git commit '#1 소개'
 git remote add origin https://github.com/sungho7777/boiler-plate-ko.git
 git push origin master
 
+
 #2 NODE JS 와 EXPRESS JS 다운로드 하기
 npm install express --save
 index.js 생성
  ㄴ https://expressjs.com/en/starter/hello-world.html
 npm run start
 
+
 #3 몽고 DB 연결
 https://www.mongodb.com/kr
 
 mongodb+srv://mzncvmc:<password>@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority
-
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://mzncvmc:<password>@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority";
@@ -33,15 +34,18 @@ client.connect(err => {
   client.close();
 });
 
-
 Mongoose 설치
 npm install mongoose --save
 
+
 #4 MongoDB Model & Schema
+
 
 #5 GIT 설치
 
+
 #6 GITHUB 연결
+
 
 #7 BodyParser & PostMan & 회원 가입 기능
 npm install body-parser --save
@@ -49,10 +53,13 @@ npm install body-parser --save
 postman 다운로드
  ㄴ https://www.postman.com/
  
+
 #8 Nodemon 설치
 npm install nodemon --save-dev
 npm run nodemon
 
+
+#9 비밀 설정 정보 관리
 
 
 

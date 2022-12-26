@@ -5,6 +5,7 @@ const app = express();
 const port = 5000;
 
 const bodyParser = require('body-parser');
+const config = require('./config/key');
 const { User } = require('./models/User');
 
 // application/x-www-form-urlencoded
@@ -13,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // application/json
 app.use(bodyParser.json());
 
-const uri = "mongodb+srv://mzncvmc:1234@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority";
+const uri = config.mongoURL;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 client.connect(err => {
