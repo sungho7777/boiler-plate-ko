@@ -25,7 +25,7 @@ client.connect(err => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello Mongo !!!');
+  res.send('Hello nodemon !!!');
 });
 
 app.listen(port, () => {

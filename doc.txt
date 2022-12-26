@@ -49,8 +49,9 @@ npm install body-parser --save
 postman 다운로드
  ㄴ https://www.postman.com/
  
-
-
+#8 Nodemon 설치
+npm install nodemon --save-dev
+npm run nodemon
 
 
 
