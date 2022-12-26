@@ -39,8 +39,16 @@ npm install mongoose --save
 
 #4 MongoDB Model & Schema
 
+#5 GIT 설치
 
+#6 GITHUB 연결
 
+#7 BodyParser & PostMan & 회원 가입 기능
+npm install body-parser --save
+
+postman 다운로드
+ ㄴ https://www.postman.com/
+ 
 
 
 
