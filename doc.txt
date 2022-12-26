@@ -1,0 +1,18 @@
+#1 소개
+cd Documents
+mkdir boiler-plate
+npm init
+
+code boiler-plate
+.gitignore 생성
+git init
+git add .
+git commit '#1 소개'
+git remote add origin https://github.com/sungho7777/boiler-plate-ko.git
+git push origin master
+
+#2 NODE JS 와 EXPRESS JS 다운로드 하기
+npm install express --save
+index.js 생성
+https://expressjs.com/en/starter/hello-world.html
+npm run start
