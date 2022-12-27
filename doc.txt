@@ -52,7 +52,7 @@ npm install body-parser --save
 
 postman 다운로드
  ㄴ https://www.postman.com/
- 
+
 
 #8 Nodemon 설치
 npm install nodemon --save-dev
@@ -62,8 +62,10 @@ npm run nodemon
 #9 비밀 설정 정보 관리
 
 
+#10 Bcrypt로 비밀번호 암호화
+npm install bcrypt --save
 
-
+https://www.npmjs.com/package/bcrypt
 
 
 
