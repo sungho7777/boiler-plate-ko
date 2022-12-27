@@ -5,11 +5,13 @@ const app = express();
 const port = 5000;
 
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const config = require('./config/key');
 const { User } = require('./models/User');
 
 // application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(cookieParser());
 
 // application/json
 app.use(bodyParser.json());
@@ -47,7 +49,8 @@ app.post('/register', (req, res) => {
 
 app.post('/login', (req, res) => {
   // 요청된 이메일을 데이터베이스에 있는지 찾는다.
-  User.findOne({email: req.body.emaul}, (err, user) => {
+  User.findOne({email: req.body.email}, (err, user) => {
+    
     if(!user){
       return res.json({
         loginSuccess: true,
@@ -61,7 +64,14 @@ app.post('/login', (req, res) => {
     });
     // 비밀번호 까지 맞다면 토큰을 생성한다.
     user.generateToken((err, user) => {
-      
+      if(err) return res.status(400).send(err);
+      // 토큰을 쿠키에 저장한다.
+      res.cookie('x_auth', user.token)
+        .status(200)
+        .json({
+          loginSuccess:true, 
+          userId:user._id
+        });
     });
   });
 

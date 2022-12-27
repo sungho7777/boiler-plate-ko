@@ -5,7 +5,7 @@ npm init
 
 code boiler-plate
 .gitignore 생성
- ㄴ https://www.toptal.com/developers/gitignore
+ㄴ https://www.toptal.com/developers/gitignore
 git init
 git add .
 git commit '#1 소개'
@@ -16,7 +16,7 @@ git push origin master
 #2 NODE JS 와 EXPRESS JS 다운로드 하기
 npm install express --save
 index.js 생성
- ㄴ https://expressjs.com/en/starter/hello-world.html
+ㄴ https://expressjs.com/en/starter/hello-world.html
 npm run start
 
 
@@ -25,14 +25,7 @@ https://www.mongodb.com/kr
 
 mongodb+srv://mzncvmc:<password>@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://mzncvmc:<password>@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
 
 Mongoose 설치
 npm install mongoose --save
@@ -51,7 +44,7 @@ npm install mongoose --save
 npm install body-parser --save
 
 postman 다운로드
- ㄴ https://www.postman.com/
+ㄴ https://www.postman.com/
 
 
 #8 Nodemon 설치
@@ -64,11 +57,21 @@ npm run nodemon
 
 #10 Bcrypt로 비밀번호 암호화
 npm install bcrypt --save
-
-https://www.npmjs.com/package/bcrypt
+ㄴ https://www.npmjs.com/package/bcrypt
 
 
 #11 로그인 기능 with Bcrypt (1)
+
+#12 토큰 생성 with jsonwebtoken
+npm install jsonwebtoken --save
+ㄴ https://www.npmjs.com/package/jsonwebtoken
+
+npm install cookie-parser --save
+ㄴ https://www.npmjs.com/package/cookie-parser
+
+
+
+
 
 
 
