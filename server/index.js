@@ -17,10 +17,10 @@ app.use(cookieParser());
 // application/json
 app.use(bodyParser.json());
 
-const mongoURL = config.mongoURL;
+const mongoURI = config.mongoURI;
 
 mongoose.set("strictQuery", false);
-mongoose.connect(mongoURL, {
+mongoose.connect(mongoURI, {
     useNewUrlParser: true
     ,useUnifiedTopology: true
     //,useCreateIndex: true

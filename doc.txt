@@ -23,7 +23,7 @@ npm run start
 #3 몽고 DB 연결
 https://www.mongodb.com/kr
 
-mongodb+srv://mzncvmc:<password>@boilerplate.nwwwnqa.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://sungho:<password>@boilerplate.4yxwx5l.mongodb.net/?retryWrites=true&w=majority
 
 
 
@@ -76,6 +76,18 @@ npm install cookie-parser --save
 
 #15 리액트란 ?
 React는 웹 프레임워크로, 자바스크립트 라이브러리의 하나로서 사용자 인터페이스를 만들기 위해 사용된다.
+
+
+#16 Create-React-App
+mkdir client
+cd client
+npx create-react-app .
+
+에러 날시에 아래 코드...
+  xcode-select --install
+  sudo rm -rf $(xcode-select -print-path)
+
+
 
 
 
