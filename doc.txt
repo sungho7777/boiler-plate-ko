@@ -62,12 +62,28 @@ npm install bcrypt --save
 
 #11 로그인 기능 with Bcrypt (1)
 
+
 #12 토큰 생성 with jsonwebtoken
 npm install jsonwebtoken --save
 ㄴ https://www.npmjs.com/package/jsonwebtoken
 
 npm install cookie-parser --save
 ㄴ https://www.npmjs.com/package/cookie-parser
+
+
+#13 Auth 기능 만들기
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
