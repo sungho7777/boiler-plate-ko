@@ -130,10 +130,12 @@ npm install react-router-dom --save
 cd client
 npm install axios --save
 
+#22 CORS Issu, Proxy setting
+CORS : Cross-Origin Resource Sharing
 
-
-
-
+https://create-react-app.dev/docs/proxying-api-requests-in-development
+ㄴ Configuring the Proxy Manually
+  npm install http-proxy-middleware --save
 
 
 
