@@ -147,7 +147,12 @@ https://create-react-app.dev/docs/proxying-api-requests-in-development
 #24 Concurrently
 npm install concurrently --save
 
+#25 Antd CSS Framwork
+Ant design
+ㄴ https://ant.design/docs/react/introduce
 
+cd client
+npm install antd --save
 
 
 
