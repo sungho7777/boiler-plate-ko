@@ -144,7 +144,8 @@ https://create-react-app.dev/docs/proxying-api-requests-in-development
   3. 더 나은 보안 제공
   4. 이용 제한된 사이트 접근가능
 
-
+#24 Concurrently
+npm install concurrently --save
 
 
 
